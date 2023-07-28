@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Varela+Round&display=swap');
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: yellow;
+    --cor-hover: #F5D551;
+    --fonte-primaria: 'Kanit', sans-serif;
+    --fonte-secundaria: 'Varela Round', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    padding: 5% 0% 0% 17%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--cor-terciaria);
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.cabecalho-menu-link:hover {
+    color: var(--cor-hover);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+
+
+.apresentacao {
+    padding: 6% 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+.apresentacao-conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: 1.88rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao-conteudo-titulo:hover {
+    color: var(--cor-hover);
+
+}
+
+.apresentacao-conteudo-texto {
+    font-size: 1.3rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao-links-subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 100;
+}
+.apresentacao-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+}
+
+.apresentacao-borda {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: 1s;
+    cursor: pointer;
+    border: 1.5px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.38rem;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+}
+
+.apresentacao-borda:hover {
+    border:  1.5px solid var(--cor-terciaria);
+    background-color: var(--cor-hover);
+    transition: 1s;
+    color: var(--cor-primaria);
+}
+
+.apresentacao-img {
+    width: 50%;
+}
+
+.apresentacao-video {
+    width: 50%;
+}
+
+.rodape {
+    padding: 35px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+}
+
+@media (max-width: 1200px) {
+    
+    .cabecalho {
+        padding: 6%;
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo {
+        width: auto;
+    }
+ 
+}
